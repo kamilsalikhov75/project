@@ -1,6 +1,7 @@
 import './Filter.css';
 
 import { Pagination } from '../Pagination/Pagination';
+import { Checkbox } from '../Checkbox/Checkbox';
 
 function Filter() {
   return (
@@ -12,7 +13,7 @@ function Filter() {
         <select id="sortSelect" className="filter__select">
           <option value="Популярные по убыванию">Популярные по убыванию</option>
           <option value="Популярные по возразтанию">
-            Популярные по возразтанию
+            Популярные по возрастанию
           </option>
         </select>
       </div>
@@ -27,38 +28,12 @@ function Filter() {
       </div>
 
       <div className="checkboxes__block">
-        <div className="checkbox__block">
-          <input id="checkbox1" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox1">боевик</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox2" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox2">приключения</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox3" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox3">мультфильм</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox4" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox4">комедия</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox5" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox5">криминал</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox6" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox6">документальный</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox7" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox7">драма</label>
-        </div>
-        <div className="checkbox__block">
-          <input id="checkbox8" type="checkbox" className="checkbox" />
-          <label htmlFor="checkbox8">семейный</label>
-        </div>
+        <Checkbox id="1" text="боевик"/>
+        <Checkbox id="2" text="боевик"/>
+        <Checkbox id="3" text="боевик"/>
+        <Checkbox id="4" text="боевик"/>
+        <Checkbox id="5" text="боевик"/>
+        <Checkbox id="6" text="боевик"/>
       </div>
       <Pagination />
     </div>
