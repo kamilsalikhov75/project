@@ -1,3 +1,4 @@
-.checkbox__block+.checkbox__block{
+
+.checkbox__item+.checkbox__item{
   margin-top: 5px;
 }

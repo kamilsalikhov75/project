@@ -42,7 +42,8 @@
   border-radius: 5px;
 }
 
-.checkboxes__block {
+.checkboxes__list {
+  list-style: none;
   max-height: 360px;
   overflow-y: auto;
   margin-bottom: 10px;

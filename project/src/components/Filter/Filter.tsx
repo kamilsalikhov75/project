@@ -2,6 +2,7 @@ import './Filter.css';
 
 import { Pagination } from '../Pagination/Pagination';
 import { Checkbox } from '../Checkbox/Checkbox';
+import { filters } from '../../mocks/filters';
 
 function Filter() {
   return (
@@ -27,14 +28,11 @@ function Filter() {
         </select>
       </div>
 
-      <div className="checkboxes__block">
-        <Checkbox id="1" text="боевик"/>
-        <Checkbox id="2" text="боевик"/>
-        <Checkbox id="3" text="боевик"/>
-        <Checkbox id="4" text="боевик"/>
-        <Checkbox id="5" text="боевик"/>
-        <Checkbox id="6" text="боевик"/>
-      </div>
+      <ul className="checkboxes__list">
+        {filters.map((item)=>{
+          return <Checkbox id={item.id} name={item.name} />;
+        })}
+      </ul>
       <Pagination />
     </div>
   );
